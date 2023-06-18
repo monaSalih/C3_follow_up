@@ -1,0 +1,19 @@
+/* proprety here */
+
+li {
+  color: #3c13e4;
+}
+
+/* p{
+            color:green;
+        } */
+li {
+  color: #0b85cc;
+}
+.group1 {
+  color: #aa5632;
+  border: 1px solid red;
+}
+#idElement {
+  border: 5px solid green;
+}
