@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            height: 400vh;
+        }
+        .container{
+           width:550px;
+           height: 960px; 
+           border: 2px solid green;
+           margin: 0 auto;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            margin-bottom: 15px;
+            font-size: 25px;
+            padding: 15px;
+        }
+        .purple{
+            background-color: purple;
+            position: fixed;
+            left:55px;
+        }
+        .orange{
+            background-color: orange;
+            /* relative
+            1. save the position for the element 
+            2. we can move it where we want inside the parent element unless we give it large number */
+            /* position: relative; */
+            /* top:66px; */
+            /* left:44px; */
+            position: sticky;
+            /* sticky 
+            1. its same as relative where he save his position and move with element scroll down 
+            POV: sticky element will not go out side his parent*/
+            top: 20px;
+        }
+        .yellow{
+            background-color: yellow;
+            /* absolute
+            1. will lose his postion 
+            2. not recommended to use it alot  */
+            /* position: absolute; */
+            /* z-index: -1; */
+            /* top: 33px;
+            left: 50px; */
+        }
+        .red{
+            background-color: red;
+            /* fixed
+            1. work like position absolute lose his position
+            2. move based veiwport 
+            */
+            /* position: fixed; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box purple">1</div>
+        <div class="box orange">2</div>
+        <div class="box yellow">3</div>
+        <div class="box red">4</div>
+      </div>
+</body>
+</html>
