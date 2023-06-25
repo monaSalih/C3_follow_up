@@ -5,21 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container{
+         display: grid;
+         grid-template-columns: repeat(3,1fr);
+         row-gap: 3%;
+         column-gap: 3%; 
+        margin-top: 3%;
+        margin-left: 5%;
+        margin-right: 5%;
+        }
+        .container .iner_div{
+          border: 1px solid tomato;
+        }
+        .dis_cont{
+          display: flex;
+          /* flex-direction: row; */
+        }
+         img {
+        width: 50%;
+        height: 40%;
+      }
+      @media (min-width:375px) and (max-width:667px){
+        .container{
+          grid-template-columns: repeat(2,1fr);
+        }
+        p{
+          height: 50px;
+          overflow: hidden;
+         /*  background-color: antiquewhite; */
+        }
+      }
+    </style>
 </head>
 <body>
     <section class="container">
-        <div class="iner_div">
+        <section class="iner_div">
           <img src="./grid_img/Introduction-to-HTML-and-CSS.jpg" alt="" />
-          <div class="dis_cont">
+          <article class="dis_cont">
             <span>HTML_CSS_ introduction</span>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
               vitae aspernatur similique sint ratione, cumque, iusto excepturi
               consequatur fugiat sequi, illum et.
             </p>
-          </div>
-        </div>
-        <div class="iner_div">
+          </article>
+        </section>
+        <section class="iner_div">
           <img src="./grid_img/JavaScript-Introduction.jpg" alt="" />
           <div class="dis_cont">
             <span>JS_ introduction</span>
@@ -29,73 +61,73 @@
               consequatur fugiat sequi, illum et.
             </p>
           </div>
-        </div>
-        <div class="iner_div">
+        </section>
+        <section class="iner_div">
           <img src="./grid_img/Introduction-To-PHP.png" alt="" />
-          <div class="dis_cont">
+          <article class="dis_cont">
             <span>PHP_ introduction</span>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
               vitae aspernatur similique sint ratione, cumque, iusto excepturi
               consequatur fugiat sequi, illum et.
             </p>
-          </div>
-        </div>
-        <div class="iner_div">
+          </article>
+        </section>
+        <section class="iner_div">
           <img src=".//grid_img/introduction-to-reactjs-071119.png" alt="" />
-          <div class="dis_cont">
+          <article class="dis_cont">
             <span>REACT_ introduction</span>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
               vitae aspernatur similique sint ratione, cumque, iusto excepturi
               consequatur fugiat sequi, illum et.
             </p>
-          </div>
-        </div>
-        <div class="iner_div">
+          </article>
+        </section>
+       <section class="iner_div">
           <img src="./grid_img/1_p649yjmxOCU7KglMmXXyJA.webp" alt="" />
-          <div class="dis_cont">
+          <article class="dis_cont">
             <span>Laravel_ introduction</span>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
               vitae aspernatur similique sint ratione, cumque, iusto excepturi
               consequatur fugiat sequi, illum et.
             </p>
-          </div>
-        </div>
-        <div class="iner_div">
+          </article>
+        </section>
+       <section class="iner_div">
           <img src="./grid_img/Introduction-to-WordPress.png" alt="" />
-          <div class="dis_cont">
+          <article class="dis_cont">
             <span>wordpress_ introduction</span>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
               vitae aspernatur similique sint ratione, cumque, iusto excepturi
               consequatur fugiat sequi, illum et.
             </p>
-          </div>
-        </div>
-        <div class="iner_div">
+          </article>
+        </section>
+       <section class="iner_div">
           <img src="./grid_img/download.jpg" alt="" />
-          <div class="dis_cont">
+          <article class="dis_cont">
             <span>QA_ introduction</span>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
               vitae aspernatur similique sint ratione, cumque, iusto excepturi
               consequatur fugiat sequi, illum et.
             </p>
-          </div>
-        </div>
-        <div class="iner_div">
+          </article>
+        </section>
+       <section class="iner_div">
           <img src="./grid_img/24591607606333.png" alt="" />
-          <div class="dis_cont">
+          <article class="dis_cont">
             <span>OOP_ introduction</span>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
               vitae aspernatur similique sint ratione, cumque, iusto excepturi
               consequatur fugiat sequi, illum et.
             </p>
-          </div>
-        </div>
-      </div>
+          </article>
+        </section>
+      </section>
 </body>
 </html>

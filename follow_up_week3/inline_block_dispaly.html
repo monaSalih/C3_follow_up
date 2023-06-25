@@ -5,27 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+       .block_ele{
+        background-color: aqua;
+       }
+       .block_ele_p{
+        /* background-color: blue; */
+        display: inline;
+       }
+       .test_inline{
+        background-color: blueviolet;
+        width: 55px;
+        height: 190px;
+        /* padding: 44px; */
+        margin-top: 55px;
+        margin-left: 88px;
+        margin-right: 33px;
+        margin-bottom: 66px;
+       }
+       .inline span{
+        background-color: red;
+        display: block;
+        width: 144px;
+        height: 155px;
+        padding: 25px;
+        margin: 22px;
+       }
+       .inline_block_span{
+        background-color: violet;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        margin: 22px;
+        padding: 33px;
+       }
+    </style>
 </head>
 <body>
-    <div class="block">
+    <artical class="block">
         <h3 class="block_ele">Block element</h3>
-        <p class="block_ele">
+        <p class="block_ele block_ele_p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="test_inline">Dicta</span> , ipsam?
           Incidunt, harum non.
         </p>
-      </div>
+      </artical>
       <!-- inline -->
-      <div class="inline">
+      <artical class="inline">
         <h3>Inline Element</h3>
         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse alias eos provident.</span>
-      </div>
+      </artical>
       <!-- inline block -->
-      <div class="inline_block">
+      <artical class="inline_block">
           <h3>Inline-Block Element</h3>
           <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.  <span class="inline_block_span">Maiores esse alias eos provident.</span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.  <span class="inline_block_span">Maiores esse alias eos </span>provident.
           </p>
         
-        </div>
+        </artical>
 </body>
 </html>
